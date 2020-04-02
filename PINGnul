@@ -1,0 +1,139 @@
+@echo off
+cls
+:sys_compactworld
+cls
+type .\sys\CompactWorld.txt
+echo.
+echo.
+ping n- 127.0.0.1 >nul
+ping n- 127.0.0.1 >nul
+goto sys_disk
+
+:sys_disk
+title Booting up...
+color 9b
+cls
+echo Finding System Disk...
+ping n- 127.0.0.1 >nul
+ping n- 127.0.0.1 >nul
+cls
+echo Found PINGnul 3.1 Boot Disk
+ping n- 127.0.0.1 >nul
+ping n- 127.0.0.1 >nul
+cls
+echo Starting Up... 1
+ping n- 127.0.0.1 >nul
+ping n- 127.0.0.1 >nul
+cls
+echo Starting Up... 4
+ping n- 127.0.0.1 >nul
+ping n- 127.0.0.1 >nul
+cls
+echo Starting Up... 50
+ping n- 127.0.0.1 >nul
+ping n- 127.0.0.1 >nul
+cls
+echo Starting Up... 70
+ping n- 127.0.0.1 >nul
+ping n- 127.0.0.1 >nul
+cls
+echo Starting Up... 90
+ping n- 127.0.0.1 >nul
+ping n- 127.0.0.1 >nul
+cls
+echo Starting Up... 100
+ping n- 127.0.0.1 >nul
+goto sethome
+
+:startLOGIN
+cls
+timeout /t 4 >nul
+%MYFILES%\PINGnul-GUI_MAIN.bat
+
+:sethome
+if exist ".\sys\sethome.txt" goto startLOGIN
+if not exist ".\sys\sethome.txt" goto install
+
+:install
+cls
+echo Loading Drivers...
+echo.
+timeout /t 4 >nul
+echo Loading Admin System...
+echo.
+timeout /t 4 >nul
+echo Loading SYSTEM Moudle
+echo.
+timeout /t 4 >nul
+echo Loading installer...
+echo.
+timeout /t 4 >nul
+cls
+echo Installing PINGnul 3.1 ...
+echo ---------------------------
+echo Progress:
+echo =
+echo ---------------------------
+timeout /t 4 >nul
+cls
+echo Installing PINGnul 3.1 ...
+echo ---------------------------
+echo Progress:
+echo ===
+echo ---------------------------
+timeout /t 4 >nul
+cls
+echo Installing PINGnul 3.1 ...
+echo ---------------------------
+echo Progress:
+echo =====
+echo ---------------------------
+timeout /t 4 >nul
+cls
+echo Installing PINGnul 3.1 ...
+echo ---------------------------
+echo Progress:
+echo =======
+echo ---------------------------
+timeout /t 4 >nul
+cls
+echo Installing PINGnul 3.1 ...
+echo ---------------------------
+echo Progress:
+echo ==========
+echo ---------------------------
+timeout /t 4 >nul
+cls
+echo Installing PINGnul 3.1 ...
+echo ---------------------------
+echo Progress:
+echo ============
+echo ---------------------------
+timeout /t 4 >nul
+cls
+echo Installing PINGnul 3.1 ...
+echo ---------------------------
+echo Progress:
+echo ==============
+echo ---------------------------
+timeout /t 4 >nul
+cls
+echo Installing PINGnul 3.1 ...
+echo ---------------------------
+echo Progress:
+echo =================
+echo ---------------------------
+timeout /t 4 >nul
+cls
+echo Installing PINGnul 3.1 ...
+echo ---------------------------
+echo Progress:
+echo =====================
+echo ---------------------------
+timeout /t 4 >nul
+echo SETHOME.txt > .\sys\sethome.txt
+cls
+echo SYSTEM: Rebooting PINGnul 3.1
+echo SYSTEM: This Might Take A While
+timeout /t 10 >nul
+goto sys_disk
